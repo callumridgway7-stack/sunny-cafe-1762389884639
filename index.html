@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Cafe - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-yellow-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-yellow-600">Sunny Cafe</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="about.html" class="text-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="menu.html" class="text-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium">Menu</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-yellow-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-700 hover:text-yellow-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-yellow-600 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="menu.html" class="text-gray-700 hover:text-yellow-600 block px-3 py-2 rounded-md text-base font-medium">Menu</a>
+                <a href="contact.html" class="text-gray-700 hover:text-yellow-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-12 bg-gradient-to-r from-yellow-400 to-orange-500 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Sunny Cafe</h2>
+            <p class="text-xl md:text-2xl mb-8">Enjoy the warmth of the sun with every sip</p>
+            <a href="menu.html" class="bg-white text-yellow-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">View Menu</a>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">Featured Drinks</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <i class="fas fa-coffee text-6xl text-yellow-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Espresso</h4>
+                    <p class="text-gray-600">Bold and rich, perfect start to your day.</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-mug-hot text-6xl text-yellow-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Latte</h4>
+                    <p class="text-gray-600">Creamy and smooth, with a hint of vanilla.</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-sun text-6xl text-yellow-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Sunny Lemonade</h4>
+                    <p class="text-gray-600">Refreshing citrus burst on a sunny day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2023 Sunny Cafe. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
