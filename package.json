@@ -1,0 +1,12 @@
+{
+  "name": "sunny-cafe",
+  "version": "1.0.0",
+  "description": "Sunny Cafe Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.13"
+  }
+}
